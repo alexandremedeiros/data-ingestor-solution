@@ -6,5 +6,5 @@ from aws.client import S3Client
 schema = CompraSchema
 aws = S3Client()
 
-apiCollector = APICollector(schema, aws).start(5)
+apiCollector = APICollector(schema, aws).start(50)
 print(apiCollector)
